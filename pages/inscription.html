@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="H">
+            <div class="DH">
+                <div class="logo">
+                    <h2>HTS</h2>
+                </div>
+                <h1>HighTechStore</h1>
+            </div>
+            <nav>
+                <a href="index.html">Acceuil</a>
+                <a href="pages/pc.html">PC</a>
+                <a href="pages/inscription.html" class="AC">Inscription</a>
+                <a href="pages/info.html">Infos</a>
+            </nav>
+        </header>
+        <main class="M">
+            <form action="">
+                <legend class="card">
+                    <h2>Formulaire d'Inscription</h2>
+                    <label for="nom">Nom :</label><br>
+                    <input type="text" name="nom" class="inp"><br>
+                    <label for="prenom">Prenom :</label><br>
+                    <input type="text" name="prenom" class="inp"><br>
+                    <label for="dn">Date de naissance :</label><br>
+                    <input type="date" name="dn" class="inp"><br>
+                    <label for="Sexe">Sexe : </label><br>
+                    <div class="dr">
+                        <input type="radio" name="sexe" class="inp radio" value="Masculin"> <span>Masculin</span>
+                        <input type="radio" name="sexe" class="inp radio" value="Feminin"> <span>Feminin</span>
+                    </div><br>
+                    <label for="adresse">Adresse :</label><br>
+                    <input type="text" name="adr" class="inp"><br>
+                    <label for="cd">Code postal :</label><br>
+                    <input type="number" name="cd" class="inp"><br>
+                    <label for="ville">Ville :</label><br>
+                    <input type="text" name="ville" class="inp"><br>
+                    <label for="gouv">Gouvernorat :</label><br>
+                    <select class="inp" name="gouv">
+                        <option value="0" selected>-- Choisir un Gouvernorat --</option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                    <label for="fonction">Fonction :</label><br>
+                    <input type="text" name="fonction" class="inp"><br>
+                    <label for="email">Adresse E-mail :</label><br>
+                    <input type="email" name="email" class="inp" placeholder="nom@exemple.com"><br>
+                    <label for="tel">Numero de telephone :</label><br>
+                    <input type="tel" name="tel" class="inp"><br>
+                    <label for="remarque">Remarque :</label><br>
+                    <textarea name="remarque" id="" placeholder="Vos remarques ou precisions..." rows="5"
+                        cols="54"></textarea><br>
+                    <input type="submit" value="Valider l'inscription" id="sub">
+                </legend>
+            </form>
+        </main>
+        <footer class="F">
+            <div>&copy; HighTechStore - Tous droits reserves | Auteur : Votre nom et prenom</div>
+        </footer>
+    </div>
+</body>
+
+</html>
