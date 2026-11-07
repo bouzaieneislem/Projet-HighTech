@@ -1,11 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PC</title>
+    <link rel="stylesheet" href="../style/style.css">
 </head>
+
 <body>
-    
+    <div class="container">
+        <header class="H">
+            <div class="DH">
+                <div class="logo">
+                    <h2>HTS</h2>
+                </div>
+                <h1>HighTechStore</h1>
+            </div>
+            <nav>
+                <a href="../index.html">Acceuil</a>
+                <a href="pc.html" class="AC">PC</a>
+                <a href="inscription.html">Inscription</a>
+                <a href="info.html">Infos</a>
+            </nav>
+        </header>
+        <main class="M">
+            <section class="card">
+                <h2>Catalogue des Ordinateurs</h2>
+                <form action="" class="formpc">
+                    <div class="divpc">
+                        <div>
+                            <label>Recherche par mot-clé :</label>
+                            <input type="search" name="recherche" placeholder="Ex: Gaming,intel,Lenovo..." class="inr">
+                        </div>
+                        <div>
+                            <label for="">Trier par prix :</label>
+                            <select name="trie" id="" class="inr">
+                                <option value="prc" selected>Prix croissant</option>
+                                <option value="prdc">Prix décroissant</option>
+                            </select>
+                        </div>
+                    </div>
+                    <input type="submit" value="Filtrer" id="sub" style="width: 18%;">
+                </form>
+                <table class="tabpc">
+                    <thead>
+                        <tr>
+                            <th>Reference</th>
+                            <th>Photo</th>
+                            <th>Description</th>
+                            <th>Prix</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="ref">REF-PC001</td>
+                            <td><img src="../photos/pc1.jpg" alt="Lenovo ThinkPad E16"></td>
+                            <td><ul>
+                                <li>Modèle : Lenovo ThinkPad E16</li>
+                                <li>Processeur : Intel Core Ultra 7</li>
+                                <li>Mémoire RAM : 16 Go DDR5</li>
+                                <li>Stockage : 512 Go SSD NVMe</li>
+                                <li>Écran : 16 pouces FHD+</li>
+                            </ul></td>
+                            <td class="pr">2 450 TND</td>
+                        </tr>
+                        <tr>
+                            <td class="ref">REF-PC002</td>
+                            <td><img src="../photos/pc2.jpg" alt="ASUS ROG Strix"></td>
+                            <td><ul>
+                                <li>Modèle : ASUS ROG Strix</li>
+                                <li>Processeur : AMD Ryzen 7 7735HS</li>
+                                <li>Carte Graphique : NVIDIA RTX 4060 8Go</li>
+                                <li>Mémoire RAM : 32 Go DDR5</li>
+                                <li>Stockage : 1 To SSD NVMe</li>
+                            </ul></td>
+                            <td class="pr">3 890 TND</td>
+                        </tr>
+                        <tr>
+                            <td class="ref">REF-PC003</td>
+                            <td><img src="../photos/pc3.jpg" alt="HP ProDesk 400 G9"></td>
+                            <td><ul>
+                                <li>Modèle : HP ProDesk 400 G9</li>
+                                <li>Processeur : Intel Core i5-13500</li>
+                                <li>Mémoire RAM : 8 Go DDR4</li>
+                                <li>Stockage : 256 Go SSD</li>
+                                <li>Inclus : Clavier + Souris filaires</li>
+                            </ul></td>
+                            <td class="pr">1 620 TND</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+        <footer class="F">
+            <div>&copy; HighTechStore - Tous droits reserves | Auteur : Votre nom et prenom</div>
+        </footer>
+    </div>
 </body>
+
 </html>
