@@ -89,7 +89,7 @@ nav a,#sub{
     text-align: center;
     font-size: 12px;
 }
-.M,.Minf{
+.M,.Minf,.MAP{
     background-color: var(--bg-body);
 }
 .card{
@@ -99,7 +99,7 @@ nav a,#sub{
     border: 1px solid var(--border-color);
     line-height: 1.5rem;
 }
-.M h2,.Minf h2{
+.M h2,.Minf h2,.MAP h2{
     border-bottom: 2px solid var(--primary-color);
     padding-bottom: 10px;
 }
@@ -119,6 +119,13 @@ li a,aside a{
     text-decoration: none;
     color: var(--primary-hover);
     font-weight: bold;
+}
+li a{
+    padding-left: 0;
+    margin-left: 0;
+}
+li{
+    color: var(--text-primary);
 }
 .inp{
     height: 2rem;
@@ -235,6 +242,13 @@ td>ul>li{
     text-align: left;
     line-height: 1.2rem;
 }
+.MAP p{
+    color: var(--text-muted);
+}
+.MAP span:hover,li a:hover{
+    color: var(--primary-hover);
+
+}
 @media(min-width:600px){
     .container{
         display: grid;
@@ -244,7 +258,7 @@ td>ul>li{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-bottom: 5x;
+        padding-bottom: 5px;
     }
     nav,.DH{
         margin-bottom: 5px;
